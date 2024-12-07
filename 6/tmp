@@ -1,0 +1,607 @@
+
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+
+PatrolPoint(l=1, c=9, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): False})
+PatrolPoint(l=7, c=8, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): False})
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+PatrolPoint(l=4, c=7, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.down: 3>): False})
+PatrolPoint(l=3, c=2, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.left: 4>): False,
+             PatrolPoint(l=4, c=7, d=<Direction.down: 3>): True})
+
+PatrolPoint(l=7, c=8, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=7, c=8, d=<Direction.down: 3>): False})
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=3, c=2, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.left: 4>): False})
+
+PatrolPoint(l=4, c=7, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.left: 4>): False})
+
+
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+PatrolPoint(l=4, c=7, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=4, c=7, d=<Direction.up: 1>): False})
+
+
+
+PatrolPoint(l=0, c=4, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): False})
+PatrolPoint(l=1, c=9, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): False})
+PatrolPoint(l=7, c=8, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): False})
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+
+
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True})
+
+
+PatrolPoint(l=0, c=4, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): False})
+PatrolPoint(l=1, c=9, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): False})
+PatrolPoint(l=7, c=8, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): False})
+PatrolPoint(l=6, c=1, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=0, c=4, d=<Direction.up: 1>): True,
+             PatrolPoint(l=1, c=9, d=<Direction.right: 2>): True,
+             PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.left: 4>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.down: 3>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=3, c=2, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): False})
+PatrolPoint(l=4, c=7, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): False})
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=3, c=2, d=<Direction.up: 1>): True,
+             PatrolPoint(l=4, c=7, d=<Direction.right: 2>): True,
+             PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>, {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False})
+
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False})
+
+
+
+
+
+PatrolPoint(l=9, c=6, d=<Direction.down: 3>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=9, c=6, d=<Direction.down: 3>): False})
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True,
+             PatrolPoint(l=9, c=6, d=<Direction.down: 3>): True})
+
+
+PatrolPoint(l=8, c=0, d=<Direction.left: 4>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=8, c=0, d=<Direction.left: 4>): False})
+PatrolPoint(l=6, c=1, d=<Direction.up: 1>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True})
+PatrolPoint(l=7, c=8, d=<Direction.right: 2>)
+defaultdict(<class 'bool'>,
+            {PatrolPoint(l=6, c=1, d=<Direction.up: 1>): True,
+             PatrolPoint(l=7, c=8, d=<Direction.right: 2>): False,
+             PatrolPoint(l=8, c=0, d=<Direction.left: 4>): True})
+
+0
