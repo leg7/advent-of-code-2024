@@ -57,36 +57,25 @@ while i >= 0:
             # print()
 
             # move it and update the free space left
-            already_moved = moved_to_free_space[j]
-            already_moved.append((file_id, file_size))
+            moved_to_free_space[j].append(file)
             free_size_left = free_size - file_size
-
             free_space_blocks[j] = free_size_left
             file_id_and_block_size[i] = None
 
-            moved = True
+            # Update the preceding free space left where the file was originally
+            free_space_blocks[i-1] += file_size
 
-            # Update the free space left where the file was originally
-            prev_free_size = free_space_blocks[i-1]
-            prev_free_size += file_size # Spaced freed up from moving the file
-
+            # if there was proceeding free space concat it to the preceeding free space
             is_last_file = i == len(file_id_and_block_size) - 1 # e.g selected file is not the last one
             is_free_space_to_the_right = moved_to_free_space[i] == []
-            if is_last_file:
-                # print("then")
-                # Update the preceding free space
-                free_space_blocks[i-1] = prev_free_size
-            elif is_free_space_to_the_right:
-                # print("elif")
-                # Then add that space to the previous group
-                proc_free_size = free_space_blocks[i]
+            if not is_last_file and is_free_space_to_the_right:
+                proceding_free_size = free_space_blocks[i]
                 free_space_blocks[i] = 0
-                free_space_blocks[i-1] = prev_free_size + proc_free_size
-            else:
-                free_space_blocks[i-1] = prev_free_size
+                free_space_blocks[i-1] += proceding_free_size
+
+            moved = True
 
         j += 1
-
 
     i -= 1
 
@@ -94,8 +83,6 @@ while i >= 0:
 # pprint(moved_to_free_space)
 # pprint(free_space_blocks)
 # print()
-
-# print(len(free_space_blocks), len(file_id_and_block_size))
 
 new_disk_map = [file_id_and_block_size[0]]
 k = 1
