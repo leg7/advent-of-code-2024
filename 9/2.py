@@ -1,81 +1,134 @@
-import copy
-from fileinput import input
+import sys
 from collections import defaultdict
+from pprint import pprint
+from copy import deepcopy
 
-for line in input():
-    disk_map = line.strip()
-    break
+# Import disk map
+filename = sys.argv[1]
+disk_map = open(filename, 'r').read()
+disk_map = list(disk_map.strip())
 
-# print(disk_map)
+# Decompress
+file_id_and_block_size = list() # The key is the file ID and the contents is the block size
+free_space_blocks = list()
+file_id = 0
+is_free_space = False
+for size in disk_map:
+    if is_free_space:
+        free_space_blocks.append(int(size))
+        is_free_space = False
+    else:
+        file_id_and_block_size.append((file_id, int(size)))
+        file_id += 1
+        is_free_space = True
 
-empty = -1
+# pprint(file_id_and_block_size)
+# pprint(free_space_blocks)
+# print()
 
-uncompressed = []
-id = 0
-for i,c in enumerate(disk_map):
-    if (i % 2 == 0):
-        elem = [id] * int(c)
-        id += 1
-        uncompressed.append(elem)
-    elif c != '0':
-        elem = [empty] * int(c)
-        uncompressed.append(elem)
+moved_to_free_space = defaultdict(lambda: list()) # key is free space block index and content are the files moved to it
 
-i = len(uncompressed) - 1
-swapped = defaultdict(bool)
+# Move files starting from the last one
+i = len(file_id_and_block_size) - 1
 while i >= 0:
-    if uncompressed[i][0] != empty:
-        k = 0
-        while k < i:
-            while uncompressed[k][0] != empty and k < i:
-                k += 1
+    file = file_id_and_block_size[i]
 
-            if (uncompressed[i] == uncompressed[k]):
-                break
+    # This check is needed because we set the file to None if it was moved later in the loop
+    if file == None:
+        i -= 1
+        continue
+    else:
+        (file_id, file_size) = file
 
-            if len(uncompressed[k]) == len(uncompressed[i]) and not swapped[k]:
-                # print("==", uncompressed[k], uncompressed[i])
-                # print(uncompressed)
-                uncompressed[k] = uncompressed[i]
-                uncompressed[i] = [empty] * len(uncompressed[i])
-                swapped[k] = True
-                break
-            elif len(uncompressed[k]) > len(uncompressed[i]) and not swapped[k]:
-                # print('>', uncompressed[k], uncompressed[i])
-                # print(uncompressed)
-                diff = len(uncompressed[k]) - len(uncompressed[i])
-                space_left = [empty] * diff
-                space_used = [empty] * len(uncompressed[i])
-                uncompressed[k] = uncompressed[i]
-                uncompressed.pop(i)
-                uncompressed.insert(k+1, space_left)
-                uncompressed.insert(i+1, space_used)
-                swapped[k] = True
-                break
+    # Find a free space block that could fit the file
+    moved = False
+    j = 0
+    while j < len(free_space_blocks) and not moved:
+        moving_file_to_the_left = file_id > j
+        if not moving_file_to_the_left:
+            break
+
+        free_size = free_space_blocks[j]
+
+        if file_size <= free_size:
+            # pprint(file_id_and_block_size)
+            # pprint(moved_to_free_space)
+            # pprint(free_space_blocks)
+            # print()
+
+            # move it and update the free space left
+            already_moved = moved_to_free_space[j]
+            already_moved.append((file_id, file_size))
+            free_size_left = free_size - file_size
+
+            free_space_blocks[j] = free_size_left
+            file_id_and_block_size[i] = None
+
+            moved = True
+
+            # Update the free space left where the file was originally
+            prev_free_size = free_space_blocks[i-1]
+            prev_free_size += file_size # Spaced freed up from moving the file
+
+            is_last_file = i == len(file_id_and_block_size) - 1 # e.g selected file is not the last one
+            is_free_space_to_the_right = moved_to_free_space[i] == []
+            if is_last_file:
+                # print("then")
+                # Update the preceding free space
+                free_space_blocks[i-1] = prev_free_size
+            elif is_free_space_to_the_right:
+                # print("elif")
+                # Then add that space to the previous group
+                proc_free_size = free_space_blocks[i]
+                free_space_blocks[i] = 0
+                free_space_blocks[i-1] = prev_free_size + proc_free_size
             else:
-                # print('<', uncompressed[k], uncompressed[i])
-                k += 1
+                free_space_blocks[i-1] = prev_free_size
+
+        j += 1
+
+
     i -= 1
-    # print()
 
-# print(uncompressed)
+# pprint(file_id_and_block_size)
+# pprint(moved_to_free_space)
+# pprint(free_space_blocks)
 # print()
 
-uncompressed = [x for xs in uncompressed for x in xs]
-# print(uncompressed)
-# print()
+# print(len(free_space_blocks), len(file_id_and_block_size))
 
-uncompressed = list(map(lambda x: 0 if x == -1 else x, uncompressed))
-print(uncompressed)
-print()
+new_disk_map = [file_id_and_block_size[0]]
+k = 1
+l = 0
+while k < len(file_id_and_block_size):
+    if l < len(free_space_blocks):
+        for f in moved_to_free_space[l]:
+            new_disk_map.append(f)
+
+        free_size = free_space_blocks[l]
+        if free_size > 0:
+            new_disk_map.append(free_size)
+
+        l += 1
+
+    file = file_id_and_block_size[k]
+    if file != None:
+        new_disk_map.append(file)
+
+    k += 1
+
+# print(new_disk_map)
 
 checksum = 0
-for i,x in enumerate(uncompressed):
-    checksum += i * x
+pos = 0
+for elem in new_disk_map:
+    is_file = isinstance(elem, tuple)
+    if is_file:
+        (file_id, file_size) = elem
+        for i in range(file_size):
+            checksum += file_id * pos
+            pos += 1
+    else:
+        pos += elem
 
 print(checksum)
-
-
-
-
-
