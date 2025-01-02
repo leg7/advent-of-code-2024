@@ -24,14 +24,6 @@ for i in range(100):
         x %= map_width
         y %= map_height
         robots[r] = x, y, vx, vy
-    top_left = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x < map_width//2 and y < map_height//2]
-    top_right = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x > map_width//2 and y < map_height//2]
-    bottom_right = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x > map_width//2 and y > map_height//2]
-    bottom_left = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x < map_width//2 and y > map_height//2]
-
-    print(len(top_left), len(top_right), len(bottom_left), len(bottom_right))
-    print(len(top_left) * len(top_right) * len(bottom_left) * len(bottom_right))
-
 
 top_left = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x < map_width//2 and y < map_height//2]
 top_right = [(x,y,vx,vy) for (x,y,vx,vy) in robots if x > map_width//2 and y < map_height//2]
