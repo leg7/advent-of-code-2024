@@ -1,35 +1,35 @@
-from fileinput import input
+import sys
+from collections import defaultdict
+from pprint import pprint
 
-for line in input():
-    rocks = line.strip().split()
-    break
 
-rocks = [int(r) for r in rocks]
+input = sys.stdin.read().strip().split()
+rocks = defaultdict(int)
+for r in input:
+    rocks[int(r)] = 1
 
 def split_number(rock):
     s = str(rock)
     l = len(s) // 2
     return list(divmod(rock, 10 ** l))
 
-# If rock is 0 it will cycle
-def f(rock, iterations_left):
+def f(rock):
     if rock == 0:
-        return ('L', 3 + 2 * (iterations_left - 1))
+        return [1]
     elif len(str(rock)) % 2 == 0:
         return split_number(rock)
-
     else:
         return [rock * 2024]
 
-def flatten(rocks):
-
-
-for i in range(25):
+for i in range(75):
+    new_rocks = defaultdict(lambda: 0)
+    for r in rocks:
+        child_stones = f(r)
+        for c in child_stones:
+            new_rocks[c] += rocks[r]
     print(i)
-    rocks = [ f(x) for x in rocks ]
-    rocks = [x for xs in rocks for x in xs]
+    rocks = new_rocks
 
-print(len(rocks))
-
+pprint(sum(rocks.values()))
 
 
